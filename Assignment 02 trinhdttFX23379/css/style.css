@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.3;
+  min-width: 800px;
+  font-family: "Inter", sans-serif;
+  color: #868e96;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+.section-title {
+  font-size: 30px;
+  font-weight: 250;
+}
+
+/* BANNER-start
+https://www.w3schools.com/howto/howto_css_image_text.asp */
+
+#banner {
+  position: relative;
+}
+#banner h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 100% 0%);
+  font-size: 40px;
+}
+
+#banner span {
+  margin: 10px;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 100% 0%);
+  font-size: 22px;
+}
+
+#nav-bar {
+  text-align: center;
+  position: relative;
+  height: 100px;
+  border: 1px solid #e9ecef;
+}
+#nav-bar a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  border-collapse: collapse;
+  border: 1px solid #e9ecef;
+  height: 100px;
+  line-height: 100px;
+}
+
+#nav-bar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-wrap: nowrap;
+}
+.nav-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.nav-item2,
+.nav-item1,
+.nav-item4,
+.nav-item5 {
+  flex-basis: 15%;
+}
+
+.nav-item3 {
+  margin: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  z-index: 20;
+  flex-basis: 40%;
+}
+
+.nav-item2 p {
+  font-size: 15px;
+  color: #adb5bd;
+}
+/* NÂNG CAO BỔ SUNG HÌNH ẢNH CÁ NHÂN NGUỒN THAM KHẢO CHAT GPT*/
+.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 230px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  z-index: 10;
+}
+#nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  list-style: none;
+}
+
+#about > .container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+  align-items: start;
+}
+
+#personal-info,
+#target {
+  padding: 50px;
+}
+
+.mt-40 li span {
+  font-weight: bold;
+}
+/* JOB EXPERIENCE START */
+#job-info > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 300px;
+  gap: 30px;
+}
+
+.hobby-icon {
+  display: inline-block;
+  padding: 5px;
+  font-size: 10px;
+}
+.hobby-icon i {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #52d7ee;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 15px;
+  color: #52d7ee;
+  font-size: 25px;
+}
+.box-info {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 1fr;
+  place-items: center;
+  border: 1px solid #adb5bd;
+}
+
+.job-item1 {
+  margin: 20px;
+  justify-self: start;
+}
+.job-item2 {
+  font-size: 35px;
+}
+.job-item3 {
+  margin: 20px;
+  grid-column: 1 / span 2;
+  height: 380px;
+  padding: 0 25px;
+}
+.job-item3 > span {
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 55px;
+}
+.job-time {
+  background-color: #339af0;
+  border-radius: 13%;
+  padding: 2px 10px;
+  color: #fff;
+}
+.job-item3 > ul {
+  list-style: none;
+  line-height: 1.3;
+}
+/* Nguồn tham khảo https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_bullet_color */
+.job-item3 > ul li::before {
+  content: "\2022";
+  color: rgb(129, 193, 216);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+/* JOB EXPERIENCE OVER */
+/* CERTIFICATE-START */
+.cer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.cer-box1 {
+  grid-column: 1/2;
+}
+.cer-box2 {
+  grid-column: 2/3;
+  border-left: 2px solid #d6c08d;
+  padding-left: 20px;
+}
+.cer-box3 {
+  grid-column: 1/3;
+  border-top: 2px solid #d6c08d;
+  padding-top: 30px;
+}
+.cer-box img {
+  float: left;
+  height: 150px;
+  margin-right: 15px;
+}
+.cer-item {
+  margin-left: 15px;
+}
+/* CER-OVER */
+
+/* PROJECT-START */
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin: 20px;
+}
+
+.project-time {
+  border-radius: 32%;
+  background-color: #4dabf7;
+  font-size: 15px;
+  padding: 10px;
+  color: #fff;
+  width: 15px;
+  height: 10px;
+}
+
+.project-name {
+  border: 2px solid #e9ecef;
+  padding: 20px;
+}
+.project-job-info {
+  border: 2px solid #e9ecef;
+  padding: 20px;
+}
+.project-job-info span {
+  margin: 10px;
+}
+.project-box table {
+  border: 2px solid #e9ecef;
+  border-collapse: collapse;
+  color: #868e96;
+  font-size: 13px;
+  line-height: 1.5;
+  height: 250px;
+}
+.project-box table td,
+th {
+  border-bottom: 2px solid #e9ecef;
+  padding: 10px;
+}
+.project-box table th {
+  width: 30%;
+}
+#footer ul li {
+  display: inline-block;
+  padding: 25px;
+  font-size: 25px;
+  color: #868e96;
+}
+
+/* FOOTER  START*/
+#footer {
+  text-align: center;
+  position: relative;
+  height: 100px;
+}
+#footer > .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+}
+#footer > .container > ul > li {
+  /* color: #000; */
+  font-size: 20px;
+  padding: 0 50px;
+  height: 100px;
+  line-height: 100px;
+}
+#footer > .container > ul > li > a {
+  text-decoration: none;
+  color: #868e96;
+}
+.icon-color {
+  color: #74c0fc;
+  font-size: 25px;
+}
+/* FOTTER-OVER */
+
+/* HIỆU ỨNG KHI BẤM VAO LINK */
+a.nav-item:hover,
+a.footer-link:hover {
+  font-weight: bold;
+}
